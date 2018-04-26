@@ -8,6 +8,9 @@
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
+    <PackageReference Include="GitVersionTask" Version="4.0.0-beta0012" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\Microsoft.ServiceFabric.Common\Microsoft.ServiceFabric.Common.csproj" />
   </ItemGroup>
 </Project>
