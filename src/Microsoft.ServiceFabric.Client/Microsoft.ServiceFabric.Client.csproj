@@ -13,4 +13,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Microsoft.ServiceFabric.Common\Microsoft.ServiceFabric.Common.csproj" />
   </ItemGroup>
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="echo Aman AssemblyVersion: $(AssemblyVersion), AssemblyFileVersion:  $(AssemblyFileVersion), AssemblySemVer: $(AssemblySemVer), InformationalVersion: $(InformationalVersion). PackageVersion: $(PackageVersion)  Version: $(Version)  VersionSuffix: $(VersionSuffix), GitVersion_MajorMinorPatch $(GitVersion_MajorMinorPatch)" />
+  </Target>
 </Project>

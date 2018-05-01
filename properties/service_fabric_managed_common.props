@@ -37,17 +37,7 @@
     <AssemblyOriginatorKeyFile>$(MSBuildThisFileDirectory)Key.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   
-  <!-- Set Version numbers. These are used for generating Assemblies and Nuget packages. -->
-  <PropertyGroup>
-    <MajorVersion>1</MajorVersion>
-    <MinorVersion>0</MinorVersion>
-    <BuildVersion>0</BuildVersion>
-    <Revision>0</Revision>
-
-    <Version>$(MajorVersion).$(MinorVersion).$(BuildVersion).$(Revision)</Version>
-    <AssemblyVersion>$(Version)</AssemblyVersion>
-    <AssemblyFileVersion>$(Version)</AssemblyFileVersion>
-  </PropertyGroup>
+  
   
   <PropertyGroup>
     <Product>Microsoft Azure Service Fabric</Product>
